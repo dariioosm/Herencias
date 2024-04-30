@@ -1,19 +1,19 @@
 Ejercicio 4: BancoAvilés.
 
 1. Diseñar una clase Titular con:
-        • Tres atributos private correspondientes al nombre, apellidos y edad.
+        • Tres atributos private correspondientes al nombre, apellidos y edad ✅✅
         • Escribir un método para que devuelva una cadena formada por el nombre, el apellido y
-        los años que tiene.
+        los años que tiene. ✅✅
 
 
 2. Diseñar una clase llamada CuentaCorriente con:
     • Tres atributos de tipo private:
-        ✓ Uno de tipo Titular que almacenará el nombre, los apellidos y la edad.
-        ✓ Uno de tipo String para el número de cuenta.
-        ✓ Uno de tipo Double para el saldo.
+        ✓ Uno de tipo Titular que almacenará el nombre, los apellidos y la edad. 
+            (Llamada al toString de Titular)✅✅
+        ✓ Uno de tipo String para el número de cuenta.✅✅
+        ✓ Uno de tipo Double para el saldo.✅✅
     • Otros métodos
-        ✓ Un método llamado setSaldo que permita asignar el saldo con un valor que se
-        pasará como parámetro.
+        ✓ Un método llamado setSaldo que permita asignar el saldo con un valor que se pasará como parámetro. ✅✅
         ✓ Un método llamado ingreso que permitirá ingresar en la cuenta una determinada
         cantidad que se pasará como parámetro.
         ✓ Un método llamado reintegro que permitirá sacar de la cuenta una determinada
@@ -34,4 +34,19 @@ Ejercicio 4: BancoAvilés.
 4. Desarrollar una clase llamada CuentaAhorro que:
     • Es una especialización de la CuentaCorriente.
     • Atributos
-        ✓ Tiene un atributo más de tipo privado llamado interes de tipo doublé.
+        ✓ Tiene un atributo más de tipo privado llamado interes de tipo double.
+    • Otros métodos
+        ✓ Un método llamado setInteres que pasado un parámetro permita asignarlo como
+        interés
+        ✓ Un método llamado getInteres que devuelva el interes aplicado
+        ✓ Un método llamado calcular los Intereses e ingresarlos en la cuenta.( Saldo+
+        saldo*interes/100)
+        ✓ Un método para visualizar todos los datos.
+5. Modificar el main y crear al final una cuenta de ahorro para Noe, el número de cuenta será
+    000002, se abrirá sin saldo y se le aplicará un interés del 2.5%
+    
+    • Hacer un ingreso de 3000€ y visualizar el número de la cuenta, el nombre del titular y el
+    saldo antes de calcular los intereses.
+    
+    • Calcular los intereses e ingresarlos en cuenta. Visualizar todos los datos de la cuenta de
+    ahorro.

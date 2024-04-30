@@ -1,5 +1,6 @@
 package BancoAviles;
 
-public class CuentaAhorro {
-    
+public class CuentaAhorro extends Titular{
+    private double interes;
+    private double saldoAhorro;
 }
