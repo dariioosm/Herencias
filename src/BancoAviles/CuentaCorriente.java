@@ -22,32 +22,34 @@ public class CuentaCorriente extends Titular {
         this.saldo = saldo;
     }
 
-    public void ingreso(int saldo) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Indique el dinero que quiere ingresar: ");
-        this.saldo = in.nextInt();
-        setSaldo(this.saldo);
-        System.out.println("Ingreso correcto, se ha agregado: " + this.saldo);
+    public void actualizaCuenta(double saldoNuevo) {
+        saldo = saldoNuevo;
+        System.out.println("Saldo actualizado correctamente");
     }
 
-    public void reintegro(double saldo) {
-        Scanner in = new Scanner(System.in);
-        saldo = getSaldo();
-        System.out.println("Ingrese dinero a retirar: ");
-        double retirar = in.nextDouble();
+    public void ingreso(double dineros) {
+        saldo += dineros;
+        System.out.println("Se han inrgesado " + dineros + "€");
+    }
 
-        while (saldo < retirar) {
-            System.out.println("No puedes retirar mas dinero que el que tienes guardado");
-            System.out.println();
-            System.out.println("Ingrese dinero a retirar: ");
-            retirar = in.nextDouble();
+    public void reintegro(double dineros) {
+        saldo -= dineros;
+        if (dineros <= saldo) {
+            System.out.println("Se han retirado" + dineros + "€");
+        } else {
+            System.out.println("No puedes retirar una cantidad mayor que la disponible");
         }
-        saldo = saldo - retirar;
-        System.out.println("Tras retirar: " + retirar + " el saldo actual es de: " + saldo);
+    }
+
+    public CuentaCorriente(String numCuenta, double saldo) {
+        super();
+        this.numCuenta = numCuenta;
+        this.saldo = saldo;
     }
 
     @Override
     public String toString() {
         return super.toString() + "CuentaCorriente [numCuenta=" + numCuenta + ", saldo=" + saldo + "]";
     }
+
 }
