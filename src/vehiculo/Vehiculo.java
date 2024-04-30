@@ -47,11 +47,11 @@ public class Vehiculo {
         this.potencia = potencia;
     }
 
-    public Vehiculo(String matricula, String color, int ruedaCoche, int cilindrada, int potencia) {
+    public Vehiculo(String matricula, String color, int numRuedas, int cilindrada, int potencia) {
         super();
         this.matricula = matricula;
         this.color = color;
-        // this.ruedaCoche=ruedaCoche;
+        this.numRuedas=numRuedas;
         this.cilindrada = cilindrada;
         this.potencia = potencia;
     }
@@ -60,16 +60,16 @@ public class Vehiculo {
         super();
         this.matricula = matricula;
         this.color = color;
-        // this.numRuedas = numRuedas;
+        this.numRuedas = numRuedas;
         this.cilindrada = cilindrada;
     }
 
-    public Vehiculo(String matricula, String color, int ruedaCoche) {
+    public Vehiculo(String matricula, String color, int numRuedas) {
         // con este constructor, puedo construir objeto con 3 elementos
         super();
         this.matricula = matricula;
         this.color = color;
-        // this.ruedaCoche = ruedaCoche;
+        this.numRuedas = numRuedas;
     }
 
     public Vehiculo(String matricula, String color) {
