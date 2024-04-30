@@ -19,23 +19,14 @@ public class Coche extends Vehiculo {
 
     public Coche(String matricula, String color) {
         super(matricula, color);
-        System.out.println(matricula);
-        System.out.println(color);
     }
 
     public Coche(String matricula, String color, int ruedaCoche) {
         super(matricula, color, ruedaCoche);
-        System.out.println(matricula);
-        System.out.println(color);
-        System.out.println(ruedaCoche);
     }
 
     public Coche(String matricula, String color, int ruedaCoche, int cilindrada) {
         super(matricula, color, ruedaCoche, cilindrada);
-        System.out.println(matricula);
-        System.out.println(color);
-        System.out.println(ruedaCoche);
-        System.out.println(cilindrada);
     }
 
     public void ponPuerta() {
