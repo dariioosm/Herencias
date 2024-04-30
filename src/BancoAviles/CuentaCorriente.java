@@ -32,7 +32,7 @@ public class CuentaCorriente extends Titular {
 
     public void reintegro(double saldo) {
         Scanner in = new Scanner(System.in);
-        double saldo = getSaldo();
+        saldo = getSaldo();
         System.out.println("Ingrese dinero a retirar: ");
         double retirar = in.nextDouble();
 
@@ -50,5 +50,4 @@ public class CuentaCorriente extends Titular {
     public String toString() {
         return super.toString() + "CuentaCorriente [numCuenta=" + numCuenta + ", saldo=" + saldo + "]";
     }
-
 }
