@@ -16,10 +16,10 @@ Ejercicio 4: BancoAvilés.
         ✓ Un método llamado setSaldo que permita asignar el saldo con un valor que se pasará como parámetro. ✅✅
         ✓ Un método llamado ingreso que permitirá ingresar en la cuenta una determinada cantidad que se pasará como parámetro.✅✅
         ✓ Un método llamado reintegro que permitirá sacar de la cuenta una determinada
-        cantidad que se pasará como parámetro.
+        cantidad que se pasará como parámetro.✅❓
         ✓ Un método llamado getSaldo que devolverá un saldo.
         ✓ Un método llamado getNumCta que devolverá la cuenta.
-        ✓ Sobrescribir el método toString para que visualice toda la información.
+        ✓ Sobrescribir el método toString para que visualice toda la información.✅✅
 
 
 3. Diseñar una clase llamada BancoAviles con un método main con la siguiente información:
@@ -41,8 +41,9 @@ Ejercicio 4: BancoAvilés.
         ✓ Un método llamado calcular los Intereses e ingresarlos en la cuenta.( Saldo+
         saldo*interes/100)
         ✓ Un método para visualizar todos los datos.
-5. Modificar el main y crear al final una cuenta de ahorro para Noe, el número de cuenta será
-    000002, se abrirá sin saldo y se le aplicará un interés del 2.5%
+
+5. Modificar el main y crear al final una cuenta de ahorro para Noe. 
+    El número de cuenta será: 000002, se abrirá sin saldo y se le aplicará un interés del 2.5%
     
     • Hacer un ingreso de 3000€ y visualizar el número de la cuenta, el nombre del titular y el
     saldo antes de calcular los intereses.
