@@ -4,7 +4,6 @@ public class Vehiculo {
     private String matricula;
     private String color;
     private int numRuedas;
-    private final int ruedaCoche = 4;
     private int cilindrada;
     private int potencia;
 

@@ -36,9 +36,6 @@ public class Persona {
         this.nacimiento = nacimiento;
 
     }
-
-
-
     
     public Persona() {
         super();
