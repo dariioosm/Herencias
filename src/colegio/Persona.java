@@ -37,6 +37,19 @@ public class Persona {
 
     }
 
+
+
+    
+    public Persona() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        super.toString();
+        return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", nacimiento=" + nacimiento + "]";
+    }
+
     public void Imprime() {
         System.out.println("Nombre: " + getNombre() + "\t" + "Apellido: " + getApellido() + "\t"
                 + "Anno de nacimiento: " + getNacimiento());

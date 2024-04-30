@@ -30,8 +30,12 @@ public class Alumno extends Persona {
     }
 
     public void grupoTurno(String grupo, String horario) {
+        //el this. se utiliza para diferenciar el parametro que esta llamando el metodo del atributo de la clase 
         this.grupo = grupo;
         this.horario = horario;
+    }
+    public Alumno(){
+        super();
     }
 
     public void GrupoTurno(String grupo, String horario) {
@@ -43,6 +47,11 @@ public class Alumno extends Persona {
         horario = in.nextLine();
         setHorario(horario);
         in.close();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"Alumno [grupo=" + grupo + ", horario=" + horario + "]";
     }
 
     public void VisualizarAlumno() {

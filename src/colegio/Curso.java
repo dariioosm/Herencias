@@ -23,7 +23,25 @@ package colegio;
             profe1.visualizarProfesor();
             System.out.println();
             profe2.visualizarProfesor();
-    
+            System.out.println();
+            System.out.println("***********************************************************************************************");
+            //metodo con el objeto vacio
+
+            Alumno alum3= new Alumno();
+            alum3.setNombre("Kepa");
+            alum3.setApellido("Sago Legui");
+            alum3.setNacimiento(1982);
+            alum3.setGrupo("DAW1");
+            alum3.setHorario("Mannana");
+            System.out.println(alum3.toString());
+            System.out.println();
+            System.out.println("***********************************************************************************************");
+            Profesor profe3= new Profesor();
+            profe3.setNombre("jiij");
+            profe3.setApellido("Fernandez");
+            profe3.setNacimiento(68);
+            profe3.setDepartamento("ufologia");
+            profe3.setNrp(87);
+            System.out.println(profe3.toString());
         }
-    
 }

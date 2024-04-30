@@ -20,6 +20,9 @@ public class Profesor extends Persona {
     public void setNrp(int nrp) {
         this.nrp = nrp;
     }
+    public Profesor(){
+        super();
+    }
 
     public Profesor(String nombre, String apellido, int nacimiento, String departamento, int nrp) {
         // el super va antes que los atributos de la clase,
@@ -28,6 +31,11 @@ public class Profesor extends Persona {
 
         this.departamento = departamento;
         this.nrp = nrp;
+    }
+    
+    @Override
+    public String toString() {
+        return super.toString()+"Profesor [departamento=" + departamento + ", nrp=" + nrp + "]";
     }
 
     public void visualizarProfesor() {
