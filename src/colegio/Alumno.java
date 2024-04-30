@@ -38,8 +38,10 @@ public class Alumno extends Persona {
         Scanner in = new Scanner(System.in);
         System.out.println("Introduce grupo al que pertenece el alumno");
         grupo = in.nextLine();
+        setGrupo(grupo);
         System.out.println("Indica el horario del grupo al que pertenece el alumno");
         horario = in.nextLine();
+        setHorario(horario);
         in.close();
     }
 
