@@ -14,8 +14,7 @@ Ejercicio 4: BancoAvilés.
         ✓ Uno de tipo Double para el saldo.✅✅
     • Otros métodos
         ✓ Un método llamado setSaldo que permita asignar el saldo con un valor que se pasará como parámetro. ✅✅
-        ✓ Un método llamado ingreso que permitirá ingresar en la cuenta una determinada
-        cantidad que se pasará como parámetro.
+        ✓ Un método llamado ingreso que permitirá ingresar en la cuenta una determinada cantidad que se pasará como parámetro.✅✅
         ✓ Un método llamado reintegro que permitirá sacar de la cuenta una determinada
         cantidad que se pasará como parámetro.
         ✓ Un método llamado getSaldo que devolverá un saldo.
