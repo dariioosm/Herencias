@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CuentaCorriente extends Titular {
     private String numCuenta;
-    private double saldo;
+    protected double saldo;
 
     public String getNumCuenta() {
         return numCuenta;

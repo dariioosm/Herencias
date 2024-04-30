@@ -12,8 +12,28 @@ public class CuentaAhorro extends CuentaCorriente {
         this.interes = interes;
     }
 
-    public void calcularIntereses(double interes, double saldoAhorro) {
-        System.out.println("Introduzca");
+    public CuentaAhorro(String numCuenta, double interes) {
+        super(numCuenta, interes);
+    }
+
+    public void actualizaInteres(double interesNuevo) {
+        interes = interesNuevo;
+        System.out.println("Interes actualizado correctamente");
+    }
+
+    public void interesActualizado(double interesNuevo) {
+
+        System.out.println("El interes aplicado es del " + interesNuevo + "%");
+    }
+
+    public void calcularIntereses(double interesNuevo) {
+        saldoAhorro = saldo + saldo * (interes / 100);
+        System.out.println("El saldo con el interes agregado es de " + saldoAhorro + "€");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "CuentaAhorro [interes=" + interes + ", saldoAhorro=" + saldoAhorro + "]";
     }
 
 }
