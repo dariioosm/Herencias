@@ -1,14 +1,14 @@
 package vehiculo;
 
-public class Menu extends Coche {
-    public Menu(String matricula, String color, int ruedaCoche, int cilindrada, int potencia, int numPuertas) {
-        super(matricula, color, ruedaCoche, cilindrada, potencia, numPuertas);
-        // TODO Auto-generated constructor stub
-    }
-
+public class Menu  {
     public static void main(String[] args) {
-        // Coche cochePepe = new Coche("0000BBB", "gris plata", null, 0, 0, 3);
-        // Coche cocheMaria = new Coche("1111CCC", "rojo", null, 0, 0, 5);
-
+         Coche cochePepe = new Coche("0000BBB", "gris plata", 0, 0, 3, 0);
+         Coche cocheMaria = new Coche("1111CCC", "rojo", 0, 0, 0, 5);
+        System.out.println(cochePepe.toString());
+        System.out.println();
+        System.out.println(cocheMaria.toString());
+        System.out.println();
+         Moto motoPepe= new Moto("2222BBBB", "negro",0,2);
+         System.out.println(motoPepe.toString());
     }
 }

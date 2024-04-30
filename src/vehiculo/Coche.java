@@ -11,22 +11,21 @@ public class Coche extends Vehiculo {
         this.numPuertas = numPuertas;
     }
 
-    public Coche(String matricula, String color, int ruedaCoche, int cilindrada, int potencia, int numPuertas) {
-        super(matricula, color, ruedaCoche, cilindrada, potencia);
+    public Coche(String matricula, String color, int numRuedas, int cilindrada, int potencia, int numPuertas) {
+        super(matricula, color, 4, cilindrada, potencia);
         this.numPuertas = numPuertas;
-
     }
 
     public Coche(String matricula, String color) {
         super(matricula, color);
     }
 
-    public Coche(String matricula, String color, int ruedaCoche) {
-        super(matricula, color, ruedaCoche);
+    public Coche(String matricula, String color, int numRuedas) {
+        super(matricula, color, 4);
     }
 
-    public Coche(String matricula, String color, int ruedaCoche, int cilindrada) {
-        super(matricula, color, ruedaCoche, cilindrada);
+    public Coche(String matricula, String color, int numRuedas, int cilindrada) {
+        super(matricula, color,4, cilindrada);
     }
 
     public void ponPuerta() {

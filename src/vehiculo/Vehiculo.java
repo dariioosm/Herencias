@@ -56,7 +56,7 @@ public class Vehiculo {
         this.potencia = potencia;
     }
 
-    public Vehiculo(String matricula, String color, int ruedaCoche, int cilindrada) {
+    public Vehiculo(String matricula, String color, int numRuedas, int cilindrada) {
         super();
         this.matricula = matricula;
         this.color = color;
