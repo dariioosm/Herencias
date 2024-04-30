@@ -31,13 +31,13 @@ Ejercicio 4: BancoAvilés.
     • Visualizar todos los datos de la cuenta ctaTitular y su saldo.
 
 4. Desarrollar una clase llamada CuentaAhorro que:
-    • Es una especialización de la CuentaCorriente.
+    • Es una especialización de la CuentaCorriente.✅✅
     • Atributos
-        ✓ Tiene un atributo más de tipo privado llamado interes de tipo double.
+        ✓ Tiene un atributo más de tipo privado llamado interes de tipo double.✅✅
     • Otros métodos
-        ✓ Un método llamado setInteres que pasado un parámetro permita asignarlo como
+        ✓ Un método llamado setInteres que pasado un parámetro permita asignarlo como✅✅
         interés
-        ✓ Un método llamado getInteres que devuelva el interes aplicado
+        ✓ Un método llamado getInteres que devuelva el interes aplicado✅✅
         ✓ Un método llamado calcular los Intereses e ingresarlos en la cuenta.( Saldo+
         saldo*interes/100)
         ✓ Un método para visualizar todos los datos.
