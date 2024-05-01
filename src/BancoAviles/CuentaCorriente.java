@@ -1,7 +1,5 @@
 package BancoAviles;
 
-import java.util.Scanner;
-
 public class CuentaCorriente extends Titular {
     private String numCuenta;
     protected double saldo;
@@ -39,6 +37,10 @@ public class CuentaCorriente extends Titular {
         } else {
             System.out.println("No puedes retirar una cantidad mayor que la disponible");
         }
+    }
+
+    public CuentaCorriente() {
+        super();
     }
 
     public CuentaCorriente(String numCuenta, double saldo) {

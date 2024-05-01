@@ -39,8 +39,8 @@ Ejercicio 4: BancoAvilés.
         interés✅✅
         ✓ Un método llamado getInteres que devuelva el interes aplicado✅✅
         ✓ Un método llamado calcular los Intereses e ingresarlos en la cuenta.
-        (Saldo+saldo*interes/100)
-        ✓ Un método para visualizar todos los datos.
+        (Saldo+saldo*interes/100)✅✅
+        ✓ Un método para visualizar todos los datos.✅✅
 
 5. Modificar el main y crear al final una cuenta de ahorro para Noe. 
     El número de cuenta será: 000002, se abrirá sin saldo y se le aplicará un interés del 2.5%

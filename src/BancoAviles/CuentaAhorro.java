@@ -16,6 +16,10 @@ public class CuentaAhorro extends CuentaCorriente {
         super(numCuenta, interes);
     }
 
+    public CuentaAhorro() {
+        super();
+    }
+
     public void actualizaInteres(double interesNuevo) {
         interes = interesNuevo;
         System.out.println("Interes actualizado correctamente");
