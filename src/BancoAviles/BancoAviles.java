@@ -3,11 +3,14 @@ package BancoAviles;
 public class BancoAviles {
     public static void main(String[] args) {
         // creacion del titular
+
         Titular titular1 = new Titular();
         titular1.setNombre("Noe");
         titular1.setApellido("Tira Donada");
         titular1.setEdad(39);
+
         // creacion de la cuenta corriente del primer titular
+
         CuentaCorriente ctaTitular1 = new CuentaCorriente();
         ctaTitular1.setNombre("Noelia");
         ctaTitular1.setApellido("Tira Donada");
@@ -17,7 +20,9 @@ public class BancoAviles {
         ctaTitular1.actualizaCuenta(0);
         ctaTitular1.reintegro(300);
         System.out.println(ctaTitular1.toString());
+
         // creacion de la cuenta de ahorro
+
         CuentaAhorro ctaTitular2 = new CuentaAhorro();
         ctaTitular2.setNombre("Noelia");
         ctaTitular2.setApellido("Tira Donada");

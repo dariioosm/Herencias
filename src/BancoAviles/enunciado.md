@@ -23,12 +23,12 @@ Ejercicio 4: BancoAvilés.
 
 
 3. Diseñar una clase llamada BancoAviles con un método main con la siguiente información:
-    • Definir una variable de tipo Titular llamada titular1.
-    • Asignarle los valores nombre=”Noe”, apellidos “Tira Donada”, edad = 39.
-    • Crear una cuenta corriente a ctaTitular1 y asignarle como número de cuenta “000001”.
-    • Ingresar 1000 € en la cuenta.
-    • Sacar 300€.
-    • Visualizar todos los datos de la cuenta ctaTitular y su saldo.
+    • Definir una variable de tipo Titular llamada titular1.✅✅
+    • Asignarle los valores nombre=”Noe”, apellidos “Tira Donada”, edad = 39.✅✅
+    • Crear una cuenta corriente a ctaTitular1 y asignarle como número de cuenta “000001”.✅✅
+    • Ingresar 1000 € en la cuenta.✅✅
+    • Sacar 300€.✅✅
+    • Visualizar todos los datos de la cuenta ctaTitular y su saldo.✅✅
 
 4. Desarrollar una clase llamada CuentaAhorro que:
     • Es una especialización de la CuentaCorriente.✅✅
@@ -43,10 +43,10 @@ Ejercicio 4: BancoAvilés.
         ✓ Un método para visualizar todos los datos.✅✅
 
 5. Modificar el main y crear al final una cuenta de ahorro para Noe. 
-    El número de cuenta será: 000002, se abrirá sin saldo y se le aplicará un interés del 2.5%
+    El número de cuenta será: 000002, se abrirá sin saldo y se le aplicará un interés del 2.5%✅✅
     
     • Hacer un ingreso de 3000€ y visualizar el número de la cuenta, el nombre del titular y el
-    saldo antes de calcular los intereses.
+    saldo antes de calcular los intereses.✅✅
     
     • Calcular los intereses e ingresarlos en cuenta. Visualizar todos los datos de la cuenta de
-    ahorro.
+    ahorro.✅✅
