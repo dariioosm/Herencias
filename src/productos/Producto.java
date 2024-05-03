@@ -33,4 +33,9 @@ public class Producto {
         super();
     }
 
+    @Override
+    public String toString() {
+        return "Producto [nombre=" + nombre + ", codigo=" + codigo + ", precio=" + precio + "]";
+    }
+
 }

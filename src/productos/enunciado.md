@@ -1,9 +1,9 @@
 Hacer un programa en Java POO que gestione una serie de productos.
 
 Los productos tienen los siguientes atributos:
-    ▪ Nombre (alfanumérico)
-    ▪ Código (alfanumérico)
-    ▪ Precio (real)
+    ▪ Nombre (alfanumérico)✅
+    ▪ Código (alfanumérico)✅
+    ▪ Precio (real)✅
 
 Tenemos dos tipos de productos:
     ▪ No perecedero: tiene un atributo llamado tipo (alfanumérico)
@@ -14,7 +14,7 @@ Tenemos dos tipos de productos:
     este método le pasaremos un número siendo la cantidad de productos.
     
     ▪ En NoPerecedero, simplemente seria multiplicar el precio por la cantidad de productos pasados.
-    ▪ En Perecedero, aparte de lo que hace producto, el precio se reducirá según los días a caducar:
+    ▪ En Perecedero, aparte de lo que hace producto, el precio se reducirá según los días a caducar:✅
     
         ▪ Si le queda 1 día para caducar, se reducirá 4% el precio final.
         ▪ Si le quedan 2 días para caducar, se reducirá 3.5% el precio final.
