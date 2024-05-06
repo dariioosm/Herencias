@@ -38,4 +38,10 @@ public class Articulo {
     public Articulo(int referencia, String nombre, int precio) {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "Articulo -> referencia: " + referencia + ", nombre: " + nombre + ", precio: " + precio;
+    }
+
 }
