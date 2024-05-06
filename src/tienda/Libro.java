@@ -66,7 +66,7 @@ public class Libro extends Articulo {
                 System.out.println("Introduzca los apellidos y nombre del autor: ");
                 String autor = in.nextLine();
                 // creacion del objeto
-                lib = new Libro(referencia, nombre, precio, numPag, isbn, autor);
+                lib = new Libro(referencia, precio, nombre, numPag, isbn, autor);
                 // escribir el objeto al arraylist
                 listaLibros.add(lib);
                 // escribir el objeto en el fichero
