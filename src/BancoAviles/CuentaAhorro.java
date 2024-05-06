@@ -1,8 +1,11 @@
 package BancoAviles;
 
-public class CuentaAhorro extends CuentaCorriente {
+class CuentaAhorro extends CuentaCorriente {
     private double interes;
-    private double saldoAhorro;
+
+    public CuentaAhorro() {
+        super();
+    }
 
     public double getInteres() {
         return interes;
@@ -12,32 +15,22 @@ public class CuentaAhorro extends CuentaCorriente {
         this.interes = interes;
     }
 
-    public CuentaAhorro(String numCuenta, double interes) {
-        super(numCuenta, interes);
+    public CuentaAhorro(Titular titular, String numCuenta, double saldo, double interes) {
+        super(titular, numCuenta, saldo);
+        this.interes = interes;
+
     }
 
-    public CuentaAhorro() {
-        super();
-    }
-
-    public void actualizaInteres(double interesNuevo) {
-        interes = interesNuevo;
-        System.out.println("Interes actualizado correctamente");
-    }
-
-    public void interesActualizado(double interesNuevo) {
-
-        System.out.println("El interes aplicado es del " + interesNuevo + "%");
-    }
-
-    public void calcularIntereses(double interesNuevo) {
-        saldoAhorro = saldo + saldo * (interes / 100);
-        System.out.println("El saldo con el interes agregado es de " + saldoAhorro + "€");
+    // metodo calcular interes y aÃ±adirlo a saldo
+    public void calcularInteres() {
+        double interesGanado = getSaldo() * interes;
+        setSaldo(getSaldo() + interesGanado);
+        System.out.println("Se ha calculado el interes y aÃ±adido a la cuenta " + interesGanado);
     }
 
     @Override
     public String toString() {
-        return super.toString() + "CuentaAhorro [interes=" + interes + ", saldoAhorro=" + saldoAhorro + "]";
+        return super.toString() + interes * 100 + "%";
     }
 
 }

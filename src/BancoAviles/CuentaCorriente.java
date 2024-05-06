@@ -1,8 +1,17 @@
 package BancoAviles;
 
-public class CuentaCorriente extends Titular {
+class CuentaCorriente extends Titular {
+    private Titular titular;
     private String numCuenta;
     protected double saldo;
+
+    public Titular getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Titular titular) {
+        this.titular = titular;
+    }
 
     public String getNumCuenta() {
         return numCuenta;
@@ -20,38 +29,47 @@ public class CuentaCorriente extends Titular {
         this.saldo = saldo;
     }
 
+    // metodo setter asignar saldo nuevo
     public void actualizaCuenta(double saldoNuevo) {
         saldo = saldoNuevo;
         System.out.println("Saldo actualizado correctamente");
     }
 
-    public void ingreso(double dineros) {
-        saldo += dineros;
-        System.out.println("Se han inrgesado " + dineros + "€");
+    // metodo ingresar dinero
+
+    public void ingreso(double cantidad) {
+        saldo += cantidad;
+        System.out.println("Se han inrgesado " + cantidad + "â‚¬");
     }
 
-    public void reintegro(double dineros) {
-        saldo -= dineros;
-        if (dineros <= saldo) {
-            System.out.println("Se han retirado" + dineros + "€");
+    public void reintegro(double cantidad) {
+        saldo -= cantidad;
+        if (cantidad <= saldo) {
+            System.out.println("Se han retirado " + cantidad + "â‚¬");
         } else {
-            System.out.println("No puedes retirar una cantidad mayor que la disponible");
+            System.out.println("No tienes saldo");
         }
     }
 
-    public CuentaCorriente() {
-        super();
+    // metodo info cuenta
+    public String getNumCta() {
+        return numCuenta;
     }
 
-    public CuentaCorriente(String numCuenta, double saldo) {
+    public CuentaCorriente(String obtenerTitular) {
         super();
+        // TODO Auto-generated constructor stub
+    }
+
+    public CuentaCorriente(Titular titular, String numCuenta, double saldo) {
+        super();
+        this.titular = titular;
         this.numCuenta = numCuenta;
         this.saldo = saldo;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + "CuentaCorriente [numCuenta=" + numCuenta + ", saldo=" + saldo + "]";
+    public CuentaCorriente() {
+        super();
     }
 
 }

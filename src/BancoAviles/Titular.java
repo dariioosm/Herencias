@@ -1,36 +1,51 @@
 package BancoAviles;
 
-public class Titular {
-    private String nombre;
-    private String apellido;
-    private int edad;
+class Titular {
+private String nombre;
+private String apellidos;
+private int edad;
 
-    public String getNombre() {
-        return nombre;
-    }
+public String getNombre() {
+	return nombre;
+}
+public void setNombre(String nombre) {
+	this.nombre = nombre;
+}
+public String getApellidos() {
+	return apellidos;
+}
+public void setApellidos(String apellidos) {
+	this.apellidos = apellidos;
+}
+public int getEdad() {
+	return edad;
+}
+public void setEdad(int edad) {
+	this.edad = edad;
+}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
-    public String getApellido() {
-        return apellido;
-    }
+public Titular() {
+	super();
+}
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
 
-    public int getEdad() {
-        return edad;
-    }
+public Titular(String nombre, String apellidos, int edad) {
+	super();
+	this.nombre = nombre;
+	this.apellidos = apellidos;
+	this.edad = edad;
+}
+//crea informacion
+public String obtenerTitular() {
+	return "Titular [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + "]";
+}
+//visualizar los atributos de la clase
+@Override
+public String toString() {
+	return obtenerTitular();
+}
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
 
-    @Override
-    public String toString() {
-        return "BancoAviles [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + "]";
-    }
+
 }
