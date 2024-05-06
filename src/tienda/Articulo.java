@@ -35,7 +35,7 @@ public class Articulo {
     }
 
     // constructor parametros
-    public Articulo(int referencia, String nombre, int precio) {
+    public Articulo(String referencia, String nombre, int precio) {
         super();
     }
 
