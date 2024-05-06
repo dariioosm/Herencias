@@ -1,6 +1,7 @@
 package tienda;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Libro extends Articulo {
@@ -36,7 +37,7 @@ public class Libro extends Articulo {
         super();
     }
 
-    public Libro(int referencia, String nombre, int precio, int numPag, int isbn, String autor) {
+    public Libro(String referencia, String nombre, int precio, int numPag, int isbn, String autor) {
         super(referencia, nombre, precio);
         this.numPag = numPag;
         this.isbn = isbn;
@@ -45,6 +46,8 @@ public class Libro extends Articulo {
 
     public void anadirLibro() {
         // donde crear el arraylist?
+        ArrayList<Libro> listaLibros = new ArrayList<Libro>();
+        Libro lib;
         Scanner in = new Scanner(System.in);
         char respuesta = 's';
         try {
@@ -64,11 +67,11 @@ public class Libro extends Articulo {
                 System.out.println("Introduzca los apellidos y nombre del autor: ");
                 String autor = in.nextLine();
                 // creacion del objeto
-                lib = new Libro();
+                lib = new Libro(referencia, nombre, precio, numPag, isbn, autor);
                 // escribir el objeto al arraylist
-
+                listaLibros.add(lib);
                 // escribir el objeto en el fichero
-
+                salida.writeObject(lib);
             } while (Character.toLowerCase(respuesta) != 'n');
         } catch (FileNotFoundException ex) {
             System.out.println("Fichero no encontrado" + ex.getMessage());
