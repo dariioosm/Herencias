@@ -1,6 +1,6 @@
 package tienda;
 
-public class Libro {
+public class Libro extends Articulo {
     private int isbn;
     private int numPag;
     private String autor;
@@ -26,6 +26,17 @@ public class Libro {
     }
 
     public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public Libro() {
+        super();
+    }
+
+    public Libro(int referencia, String nombre, int precio, int numPag, String autor) {
+        super(referencia, nombre, precio);
+        this.numPag = numPag;
+        this.isbn = isbn;
         this.autor = autor;
     }
 
