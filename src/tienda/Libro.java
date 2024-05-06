@@ -54,7 +54,7 @@ public class Libro extends Articulo {
             do {
                 // ordenes para el usuario
                 System.out.println("Introduzca referencia del producto: ");
-                String referencia = in.nextLine();
+                int referencia = in.nextInt();
                 System.out.println("Introduzca nombre del libro: ");
                 String nombre = in.nextLine();
                 System.out.println("Introduzca precio del libro: ");
@@ -73,6 +73,8 @@ public class Libro extends Articulo {
                 salida.writeObject(lib);
                 // cerrar archivo
                 salida.close();
+                System.out.println("Desea continuar S/N");
+                respuesta = in.next().charAt(0);
             } while (Character.toLowerCase(respuesta) != 'n');
         } catch (FileNotFoundException ex) {
             System.out.println("Fichero no encontrado" + ex.getMessage());
