@@ -1,4 +1,4 @@
-package banco;
+package BancoAviles;
 
 class BancoAviles {
 public static void main (String [] args) {
