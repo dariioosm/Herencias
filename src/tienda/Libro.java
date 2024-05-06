@@ -108,7 +108,7 @@ public class Libro extends Articulo {
 
     @Override
     public String toString() {
-        return super.toString() + "Libro -> ISBN: " + isbn + ", NumPaginas: " + numPag + ", Autor: " + autor;
+        return super.toString() + " Libro -> ISBN: " + isbn + ", NumPaginas: " + numPag + ", Autor: " + autor;
     }
 
 }
