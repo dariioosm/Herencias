@@ -72,6 +72,8 @@ public class Libro extends Articulo {
                 listaLibros.add(lib);
                 // escribir el objeto en el fichero
                 salida.writeObject(lib);
+                // cerrar archivo
+                salida.close();
             } while (Character.toLowerCase(respuesta) != 'n');
         } catch (FileNotFoundException ex) {
             System.out.println("Fichero no encontrado" + ex.getMessage());
