@@ -82,6 +82,28 @@ public class Libro extends Articulo {
 
     }
 
+    public void verLibro() {// ver el arraylist que tiene los libros
+        System.out.println("**********Libros en el inventario**********");
+        for (Libro libros : listaLibros) {
+            System.out.println(libros.toString());
+        }
+    }
+
+    public void leerInventario() throws ClassNotFoundException, FileNotFoundException, IOException {
+        // leer los datos guardados en el archivo
+        try {
+            ObjectInputStream entrada = new ObjectInputStream(new FileInputStream("registroLibros.dat"));
+            listaLibros = (ArrayList) entrada.readObject();
+            entrada.close();
+        } catch (ClassNotFoundException ex) {
+            System.out.println("No se encuentra la clase" + ex.getMessage());
+        } catch (FileNotFoundException ex) {
+            System.out.println("Archivo no encontrado " + ex.getMessage());
+        } catch (IOException ex) {
+            System.out.println("Error en entrada o salida de datos " + ex.getMessage());
+        }
+    }
+
     @Override
     public String toString() {
         return super.toString() + "Libro -> ISBN: " + isbn + ", NumPaginas: " + numPag + ", Autor: " + autor;
