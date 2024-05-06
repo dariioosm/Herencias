@@ -45,7 +45,7 @@ public class Perecedero extends Producto {
 
     // busca el producto y multiplica el numero de unidades por el precio unitario
     // descontado
-    public void calculaImporte() {
+    public void calculaPerecedero() {
         Scanner in = new Scanner(System.in);
         System.out.print("Introduce el codigo de producto: ");
         String buscaCodigo = in.nextLine();
