@@ -1,57 +1,76 @@
 package BancoAviles;
 
-public class CuentaCorriente extends Titular {
-    private String numCuenta;
-    protected double saldo;
+class CuentaCorriente extends Titular {
+private Titular titular;
+private String numCuenta;	
+protected double saldo;
 
-    public String getNumCuenta() {
-        return numCuenta;
-    }
+public Titular getTitular() {
+	return titular;
+}
 
-    public void setNumCuenta(String numCuenta) {
-        this.numCuenta = numCuenta;
-    }
+public void setTitular(Titular titular) {
+	this.titular = titular;
+}
 
-    public double getSaldo() {
-        return saldo;
-    }
+public String getNumCuenta() {
+	return numCuenta;
+}
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+public void setNumCuenta(String numCuenta) {
+	this.numCuenta = numCuenta;
+}
 
-    public void actualizaCuenta(double saldoNuevo) {
-        saldo = saldoNuevo;
-        System.out.println("Saldo actualizado correctamente");
-    }
+public double getSaldo() {
+	return saldo;
+}
 
-    public void ingreso(double dineros) {
-        saldo += dineros;
-        System.out.println("Se han inrgesado " + dineros + "€");
-    }
+public void setSaldo(double saldo) {
+	this.saldo = saldo;
+}
 
-    public void reintegro(double dineros) {
-        saldo -= dineros;
-        if (dineros <= saldo) {
-            System.out.println("Se han retirado" + dineros + "€");
-        } else {
-            System.out.println("No puedes retirar una cantidad mayor que la disponible");
-        }
-    }
+//metodo setter asignar saldo nuevo
+public void actualizaCuenta(double saldoNuevo) {
+	saldo=saldoNuevo;
+	System.out.println("Saldo actualizado correctamente");
+}
 
-    public CuentaCorriente() {
-        super();
-    }
+//metodo ingresar dinero
 
-    public CuentaCorriente(String numCuenta, double saldo) {
-        super();
-        this.numCuenta = numCuenta;
-        this.saldo = saldo;
-    }
+public void ingreso(double cantidad) {
+	saldo+=cantidad;
+	System.out.println("Se han inrgesado "+cantidad+"â‚¬");
+}
 
-    @Override
-    public String toString() {
-        return super.toString() + "CuentaCorriente [numCuenta=" + numCuenta + ", saldo=" + saldo + "]";
-    }
+public void reintegro(double cantidad) {
+	saldo-=cantidad;
+	if(cantidad<=saldo) {
+		System.out.println("Se han retirado "+cantidad+"â‚¬");
+	}
+	else {
+		System.out.println("No tienes saldo");
+	}
+}
+
+//metodo info cuenta
+public  String getNumCta() {
+	return numCuenta;
+}
+
+public CuentaCorriente(String obtenerTitular) {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+public CuentaCorriente(Titular titular, String numCuenta, double saldo) {
+	super();
+	this.titular = titular;
+	this.numCuenta = numCuenta;
+	this.saldo = saldo;
+}
+
+public CuentaCorriente() {
+	super();
+}
 
 }
