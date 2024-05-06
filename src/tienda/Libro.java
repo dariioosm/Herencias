@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Libro extends Articulo {
+    ArrayList<Libro> listaLibros = new ArrayList<Libro>();
     private int isbn;
     private int numPag;
     private String autor;
@@ -45,8 +46,6 @@ public class Libro extends Articulo {
     }
 
     public void anadirLibro() {
-        // donde crear el arraylist?
-        ArrayList<Libro> listaLibros = new ArrayList<Libro>();
         Libro lib;
         Scanner in = new Scanner(System.in);
         char respuesta = 's';
