@@ -29,13 +29,13 @@ public class Articulo {
         this.precio = precio;
     }
 
-    // constructor vacio
-    public Articulo() {
+    // constructor parametros
+    public Articulo(int referencia, String nombre, int precio) {
         super();
     }
 
-    // constructor parametros
-    public Articulo(String referencia2, String nombre, int precio) {
+    // constructor vacio
+    public Articulo() {
         super();
     }
 

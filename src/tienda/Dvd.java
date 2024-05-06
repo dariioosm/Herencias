@@ -52,11 +52,11 @@ public class Dvd extends Articulo {
                 System.out.println("Introduzca duracion: ");
                 int duracion = in.nextInt();
                 System.out.println("Introduzca los apellidos y nombre del realizador: ");
-                String autor = in.nextLine();
+                String realizador = in.nextLine();
                 // creacion del objeto
                 dvd = new Dvd(referencia, nombre, precio, realizador, duracion);
                 // escribir el objeto al arraylist
-                listaLibros.add(dvd);
+                listaDvd.add(dvd);
                 // escribir el objeto en el fichero
                 salida.writeObject(dvd);
                 // cerrar archivo

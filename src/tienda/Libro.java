@@ -38,7 +38,7 @@ public class Libro extends Articulo {
         super();
     }
 
-    public Libro(String referencia, int precio, String nombre, int numPag, int isbn, String autor) {
+    public Libro(int referencia, int precio, String nombre, int numPag, int isbn, String autor) {
         super(referencia, nombre, precio);
         this.numPag = numPag;
         this.isbn = isbn;
