@@ -25,8 +25,25 @@ public class Perecedero extends Producto {
         this.perecedero = perecedero;
     }
 
-    public double calcularDescuento() {
-        double descuento = 0;
+    /* el metodo calcular descuento se tiene que hace con arrays*/
+
+
+    public double calcularDescuento(int cantidad) {
+        int[] dias= {1,2,3,4,5};
+        double [] dto={4,3.5,3,2.5,2};
+        double desc, importe=0;
+        for(int i=0;i<dto.length;i++){
+            if(dias==(i+1)){ 
+                if(dias==dias[i]){
+                    desc=((super.getPrecio()*cantidad)*dto[i])/100;
+                    importe=(super.getPrecio()*cantidad)-dto;
+                }
+            }
+            return importe;
+        }
+        
+        
+        /*double descuento = 0;
         if (perecedero == 1) {
             descuento = 0.04;
         } else if (perecedero == 2) {
@@ -37,10 +54,10 @@ public class Perecedero extends Producto {
             descuento = 0.025;
         } else if (perecedero == 5) {
             descuento = 0.02;
-        }
+        }*/
         // descuento unitario en funcion de los dias a caducar
-        double precioDescuento = precio - (precio * descuento);
-        return precioDescuento;
+        /*double precioDescuento = precio - (precio * descuento);
+        return precioDescuento;*/
     }
 
     // busca el producto y multiplica el numero de unidades por el precio unitario

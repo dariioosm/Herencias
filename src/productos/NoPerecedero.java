@@ -10,5 +10,7 @@ public class NoPerecedero extends Producto {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
+    public void calculaNoPerecedero(){
+        return super
+    }
 }
