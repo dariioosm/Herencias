@@ -52,23 +52,16 @@ public class Perecedero extends Producto {
         System.out.println("Introduce numero de unidades vendidas: ");
         int unidades = in.nextInt();
         System.out.println();
-        // boolean encontrado = false;
-
+        
         for (Perecedero producto : listaProductos) {
             if (producto.getCodigo().equalsIgnoreCase(buscaCodigo)) {
                 double importe = producto.calcularDescuento() * unidades;
                 System.out.println("El importe total del producto " + producto.getNombre() + "es: " + importe);
-                // encontrado = true;
-                // break;
+            
             } else {
                 System.out.println("Producto inexistente");
             }
         }
-        /*
-         * if (!encontrado) {
-         * System.out.println("Producto inexistente");
-         * }
-         */
     }
 
 }

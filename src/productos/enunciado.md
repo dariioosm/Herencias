@@ -33,6 +33,8 @@ Tenemos dos tipos de productos:
 Crea una clase ejecutable donde se manejen distintas estructuras de datos y métodos.
 Crear un menú que permita hacer lo siguiente:
 
+    (Crear lo de abajo en una clase)
+
     ➢ Grabar los productos en un fichero.
     ➢ Añadir nuevos productos a través del teclado si el código esta repetido en algún producto, no se agregará .
     ➢ Calcular el importe total de vender una cantidad determinada de cada uno de los productos que figuran en el ArrayList.
