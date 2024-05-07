@@ -6,21 +6,21 @@ Los productos tienen los siguientes atributos:
     ▪ Precio (real)✅
 
 Tenemos dos tipos de productos:
-    ▪ No perecedero: tiene un atributo llamado tipo (alfanumérico)
+    ▪ No perecedero: tiene un atributo llamado tipo (alfanumérico)✅
     ▪ Perecedero: tiene un atributo llamado días a caducar ( de 1 a 5)
-    Crea sus constructores, getters, setters y toString.
+    Crea sus constructores, getters, setters y toString.✅
 
     Tendremos un método llamada calcular, que según cada clase hará una cosa u otra, a
     este método le pasaremos un número siendo la cantidad de productos.
     
-    ▪ En NoPerecedero, simplemente seria multiplicar el precio por la cantidad de productos pasados.
+    ▪ En NoPerecedero, simplemente seria multiplicar el precio por la cantidad de productos pasados.✅
     ▪ En Perecedero, aparte de lo que hace producto, el precio se reducirá según los días a caducar:✅
     
-        ▪ Si le queda 1 día para caducar, se reducirá 4% el precio final.
-        ▪ Si le quedan 2 días para caducar, se reducirá 3.5% el precio final.
-        ▪ Si le quedan 3 días para caducar, se reducirá 3% el precio final.
-        ▪ Si le quedan 4 días para caducar, se reducirá 2.5% el precio final.
-        ▪ Si le quedan 5 días para caducar, se reducirá 2% el precio final.
+        ▪ Si le queda 1 día para caducar, se reducirá 4% el precio final.✅
+        ▪ Si le quedan 2 días para caducar, se reducirá 3.5% el precio final.✅
+        ▪ Si le quedan 3 días para caducar, se reducirá 3% el precio final.✅
+        ▪ Si le quedan 4 días para caducar, se reducirá 2.5% el precio final.✅
+        ▪ Si le quedan 5 días para caducar, se reducirá 2% el precio final.✅
 
             NoPerecedero (“LataAtun”,”LT”,2.34,”Latas”)
             NoPerecedero (“Sopa Vegetal”,”SP”,1.24,”Sobres”)

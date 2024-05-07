@@ -3,7 +3,7 @@ package productos;
 public class Producto {
     protected String nombre;
     protected String codigo;
-    protected int precio;
+    protected double precio;
 
     public String getNombre() {
         return nombre;
@@ -21,7 +21,7 @@ public class Producto {
         this.codigo = codigo;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
