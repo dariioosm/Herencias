@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Libro extends Articulo {
+public class Libro extends Articulo implements Serializable{
     ArrayList<Libro> listaLibros = new ArrayList<Libro>();
-    private int isbn;
+    private String isbn;
     private int numPag;
     private String autor;
 
@@ -38,7 +38,7 @@ public class Libro extends Articulo {
         super();
     }
 
-    public Libro(int referencia, int precio, String nombre, int numPag, int isbn, String autor) {
+    public Libro(int referencia, int precio, String nombre, int numPag, String isbn, String autor) {
         super(referencia, nombre, precio);
         this.numPag = numPag;
         this.isbn = isbn;
@@ -62,7 +62,7 @@ public class Libro extends Articulo {
                 System.out.println("Introduzca numero de paginas: ");
                 int numPag = in.nextInt();
                 System.out.println("Introduzca numero ISBN: ");
-                int isbn = in.nextInt();
+                String isbn = in.nextLine();
                 System.out.println("Introduzca los apellidos y nombre del autor: ");
                 String autor = in.nextLine();
                 // creacion del objeto

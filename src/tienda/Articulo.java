@@ -1,9 +1,9 @@
 package tienda;
-
-public class Articulo {
+import java.io.Serializable;
+public class Articulo implements Serializable {
     protected int referencia;
     protected String nombre;
-    protected int precio;
+    protected double precio;
 
     public int getReferencia() {
         return referencia;
@@ -21,7 +21,7 @@ public class Articulo {
         this.nombre = nombre;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
@@ -30,7 +30,7 @@ public class Articulo {
     }
 
     // constructor parametros
-    public Articulo(int referencia, String nombre, int precio) {
+    public Articulo(int referencia, String nombre, double precio) {
         super();
     }
 
