@@ -25,7 +25,7 @@ public class Producto {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
@@ -33,7 +33,7 @@ public class Producto {
         super();
     }
 
-    public Producto(String nombre, String codigo, int precio){
+    public Producto(String nombre, String codigo, double precio){
         super();
         this.nombre=nombre;
         this.codigo=codigo;
