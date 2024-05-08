@@ -11,7 +11,7 @@ public class Perecedero extends Producto {
         super();
     }
 
-    public Perecedero(String nombre, String codigo, int precio, int caduca) {
+    public Perecedero(String nombre, String codigo, double precio, int caduca) {
         super(nombre,codigo,precio);
         this.caduca = caduca;
     }
