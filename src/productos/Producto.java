@@ -33,6 +33,13 @@ public class Producto {
         super();
     }
 
+    public Producto(String nombre, String codigo, int precio){
+        super();
+        this.nombre=nombre;
+        this.codigo=codigo;
+        this.precio=precio;
+    }
+
     @Override
     public String toString() {
         return "Producto [nombre=" + nombre + ", codigo=" + codigo + ", precio=" + precio + "]";
