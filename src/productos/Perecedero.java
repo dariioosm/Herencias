@@ -45,24 +45,6 @@ public class Perecedero extends Producto {
     /* 
     ? no se si se necesita el metodo de abajo
     */ 
-    public void calculaPerecedero() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Introduce el codigo de producto: ");
-        String buscaCodigo = in.nextLine();
-        System.out.println("Introduce numero de unidades vendidas: ");
-        int unidades = in.nextInt();
-        System.out.println();
-        
-        for (Perecedero producto : listaProductos) {
-            if (producto.getCodigo().equalsIgnoreCase(buscaCodigo)) {
-                double importe = producto.calcularDescuento(unidades) * unidades;
-                System.out.println("El importe total del producto " + producto.getNombre() + "es: " + importe);
-            
-            } else {
-                System.out.println("Producto inexistente");
-            }
-        }
-    }
 
 }
 
