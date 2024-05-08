@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Libro extends Articulo implements Serializable{
+public class Libro extends Articulo implements Serializable {
     ArrayList<Libro> listaLibros = new ArrayList<Libro>();
     private String isbn;
     private int numPag;

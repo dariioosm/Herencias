@@ -1,5 +1,7 @@
 package tienda;
+
 import java.io.Serializable;
+
 public class Articulo implements Serializable {
     protected int referencia;
     protected String nombre;
