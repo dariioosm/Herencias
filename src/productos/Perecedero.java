@@ -12,7 +12,7 @@ public class Perecedero extends Producto {
     }
 
     public Perecedero(String nombre, String codigo, int precio, int caduca) {
-        super();
+        super(nombre,codigo,precio);
         this.caduca = caduca;
     }
 
@@ -35,14 +35,16 @@ public class Perecedero extends Producto {
             if (caduca == dias[i]) {
                 desc = (super.getPrecio() * cantidad * dto[i]) / 100;
                 importe = super.getPrecio() * cantidad - desc;
-                }
-            return importe;
+            }
         }
+        return importe;
     }
 
     // busca el producto y multiplica el numero de unidades por el precio unitario
     // descontado
-    // no se si se necesita el metodo de abajo
+    /* 
+    ? no se si se necesita el metodo de abajo
+    */ 
     public void calculaPerecedero() {
         Scanner in = new Scanner(System.in);
         System.out.print("Introduce el codigo de producto: ");
