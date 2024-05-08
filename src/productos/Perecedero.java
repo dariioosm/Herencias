@@ -4,60 +4,40 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Perecedero extends Producto {
-    ArrayList<Perecedero> listaProductos = new ArrayList<>();
-
-    private int perecedero;
+    
+    private int caduca;
 
     public Perecedero() {
         super();
     }
 
-    public Perecedero(String nombre, String codigo, int precio, int perecedero) {
+    public Perecedero(String nombre, String codigo, int precio, int caduca) {
         super();
-        this.perecedero = perecedero;
+        this.caduca = caduca;
     }
 
-    public int getPerecedero() {
-        return perecedero;
+    public int getCaduca() {
+        return caduca;
     }
 
-    public void setPerecedero(int perecedero) {
-        this.perecedero = perecedero;
+    public void setCaduca(int caduca) {
+        this.caduca = caduca;
     }
 
     /* el metodo calcular descuento se tiene que hace con arrays*/
 
 
-    public double calcularDescuento(int cantidad) {
+    public double calcularDescuento(int cantidad, int caduca) {
         int[] dias= {1,2,3,4,5};
         double [] dto={4,3.5,3,2.5,2};
         double desc, importe=0;
-        for(int i=0;i<dto.length;i++){
-            if(dias==(i+1)){ 
-                if(dias==dias[i]){
-                    desc=((super.getPrecio()*cantidad)*dto[i])/100;
-                    importe=(super.getPrecio()*cantidad)-dto;
+        for (int i = 0; i < dias.length; i++) {
+            if (caduca == dias[i]) {
+                desc = (super.getPrecio() * cantidad * dto[i]) / 100;
+                importe = super.getPrecio() * cantidad - desc;
                 }
-            }
             return importe;
         }
-        
-        
-        /*double descuento = 0;
-        if (perecedero == 1) {
-            descuento = 0.04;
-        } else if (perecedero == 2) {
-            descuento = 0.035;
-        } else if (perecedero == 3) {
-            descuento = 0.03;
-        } else if (perecedero == 4) {
-            descuento = 0.025;
-        } else if (perecedero == 5) {
-            descuento = 0.02;
-        }*/
-        // descuento unitario en funcion de los dias a caducar
-        /*double precioDescuento = precio - (precio * descuento);
-        return precioDescuento;*/
     }
 
     // busca el producto y multiplica el numero de unidades por el precio unitario
@@ -72,7 +52,7 @@ public class Perecedero extends Producto {
         
         for (Perecedero producto : listaProductos) {
             if (producto.getCodigo().equalsIgnoreCase(buscaCodigo)) {
-                double importe = producto.calcularDescuento() * unidades;
+                double importe = producto.calcularDescuento(unidades) * unidades;
                 System.out.println("El importe total del producto " + producto.getNombre() + "es: " + importe);
             
             } else {
@@ -82,3 +62,4 @@ public class Perecedero extends Producto {
     }
 
 }
+
